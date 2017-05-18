@@ -1,0 +1,40 @@
+function  [winmove, player, fullgame] = checkwin(gamestate)
+% checkwin
+% 
+% This function checks if the player(1 or 2) has won or not and returns
+% true or false
+% Also checks if the gameboard is completely full and returns true or false
+% 
+% Dominick Anatala 2017 Version 1.0
+
+
+winmove = false;
+fullgame = true;
+player = 0;
+consequ
+
+% First checks by scanning columns and if theres any vertical wins
+for Col = 1:size(gamestate, 2)
+    
+    
+end
+
+% then checks by scanning rows and if theres any horizontal wins
+for Row = 1:size(gamestate, 1)
+      
+end
+
+% then checks diagonals
+
+
+% checks if the board is full, returns true or false
+for Col = 1:8
+    for Row = 1:8
+        if gamestate(Row, Col) == 0
+            fullgame = false;
+            player = 0;
+   
+            return;
+        end
+    end
+end
